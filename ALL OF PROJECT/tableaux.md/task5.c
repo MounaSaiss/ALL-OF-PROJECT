@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main (){
     float V[3],W[3];
-    int i,j;
+    int i;
     float Ps;
     for(i=0;i<3;i++){
         printf("Veuillez saisir l'elements %d de V :",i+1);
