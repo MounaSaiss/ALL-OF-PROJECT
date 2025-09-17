@@ -1,18 +1,20 @@
 #include<stdio.h>
- int min(int a,int b){
- if (b<a)
- printf ("Min = %d",b);
- else 
- printf ("Min = %d",a);
- }
+float factoriel (int A){
+    int i;
+    float F;
+    F=1;
+    for (i=1;i<=A;i++){
+        F=F*i;
+    }
+return F;
+}
+
 
 
  int main (){
-    int a,b;
-    printf("Veuillez saisir le premier nombre :");
-    scanf ("%d",&a);
-    printf("Veuillez saisir le deuxieme nombre :");
-    scanf("%d",&b);
-    min(a,b);
+    int A;
+    printf("Veuillez saisir un nombre :");
+    scanf ("%d",&A);
+    printf ("F=%.2f",factoriel(A));
     return 0;
  }
